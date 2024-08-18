@@ -1,0 +1,446 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Robotobold";
+  src: url("./Robotobold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Robotothin";
+  src: url("./Robotothin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+  background: #fff5e8;
+  font-family: "Roboto";
+  color: #6e0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Robotobold";
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Robotobold";
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: "Robotobold";
+}
+
+.fontsize2rem {
+  font-size: 2rem;
+}
+
+.fontsize1rem {
+  font-size: 1.1rem;
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.maincolor {
+  color: #6e0000;
+}
+
+.secondcolor {
+  color: #fff5e8;
+}
+
+.accentcolor {
+  color: #2E0015;
+}
+
+.mainbg {
+  background: #6e0000;
+}
+
+.secondbg {
+  background: #fff5e8;
+}
+
+.accentbg {
+  background: #2E0015;
+}
+
+.taright {
+  text-align: right;
+}
+
+.taleft {
+  text-align: left;
+}
+
+.tacenter {
+  text-align: center;
+}
+
+.tajustify {
+  text-align: justify;
+}
+
+.marginbottom5 {
+  margin-bottom: 5rem;
+}
+
+.marginbottom2 {
+  margin-bottom: 2rem;
+}
+
+.margin1 {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff5e8;
+}
+a:hover {
+  color: #fcd29c;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+button {
+  width: -moz-max-content;
+  width: max-content;
+  height: 3rem;
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+  background: #2E0015;
+  color: #fff5e8;
+  border-radius: 0.5rem;
+}
+
+.svg {
+  display: flex;
+  min-height: 3rem;
+  max-height: 5rem;
+}
+
+.svgbox {
+  height: 100%;
+  width: 100%;
+}
+
+.absolutecenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Robotobold";
+  src: url("./Robotobold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Robotothin";
+  src: url("./Robotothin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+  background: #fff5e8;
+  font-family: "Roboto";
+  color: #6e0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Robotobold";
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Robotobold";
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: "Robotobold";
+}
+
+.fontsize2rem {
+  font-size: 2rem;
+}
+
+.fontsize1rem {
+  font-size: 1.1rem;
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.maincolor {
+  color: #6e0000;
+}
+
+.secondcolor {
+  color: #fff5e8;
+}
+
+.accentcolor {
+  color: #2E0015;
+}
+
+.mainbg {
+  background: #6e0000;
+}
+
+.secondbg {
+  background: #fff5e8;
+}
+
+.accentbg {
+  background: #2E0015;
+}
+
+.taright {
+  text-align: right;
+}
+
+.taleft {
+  text-align: left;
+}
+
+.tacenter {
+  text-align: center;
+}
+
+.tajustify {
+  text-align: justify;
+}
+
+.marginbottom5 {
+  margin-bottom: 5rem;
+}
+
+.marginbottom2 {
+  margin-bottom: 2rem;
+}
+
+.margin1 {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff5e8;
+}
+a:hover {
+  color: #fcd29c;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+button {
+  width: -moz-max-content;
+  width: max-content;
+  height: 3rem;
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+  background: #2E0015;
+  color: #fff5e8;
+  border-radius: 0.5rem;
+}
+
+.svg {
+  display: flex;
+  min-height: 3rem;
+  max-height: 5rem;
+}
+
+.svgbox {
+  height: 100%;
+  width: 100%;
+}
+
+.absolutecenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#app {
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem;
+  box-shadow: 1px 1px 5px #2E0015;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background: #2E0015;
+  color: #fff5e8;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.header__items {
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background: #2E0015;
+  color: #fff5e8;
+  border-radius: 0rem 0rem 1rem 1rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,50 @@
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 10
+    width: 100vw
+    height: 100vh
+    background: #0000006e
+    backdrop-filter: blur(10px)
+    opacity: 1
+    animation: anime 0.2s linear 0s
+    @keyframes anime 
+        0%
+            opacity: 0
+            scale: 10%
+            width: 0vw
+            height: 0vh
+        100%
+            opacity: 1
+            width: 100vw
+            height: 100vh
+            scale: 100%
+.auth
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 35rem
+    height: 25rem
+    background: $COLACCENT
+    color: $COLSECOND
+    border-radius: 0.7rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    padding: 2rem
+    box-shadow: 2px 2px 5px black
+    &__btn
+        height: 3rem
+        width: max-content
+        padding: 0.5rem
+        text-align: center
+        box-shadow: 1px 1px 2px black
+        &:hover
+            background: #0000001f
+        &:active
+            background: #00000065
+            
